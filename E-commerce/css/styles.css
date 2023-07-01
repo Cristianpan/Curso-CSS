@@ -3,6 +3,7 @@
     --verde: #8cbc00;
     --verdeOscuro: #769c02;
     --grisClaro: #e1e1e1;
+    --grisOscuro: #525252;
     --blanco: #fff;
 }
 html {
@@ -76,6 +77,7 @@ img {
     color: var(--blanco);
     text-transform: uppercase;
     font-weight: bold;
+    border-radius: 1rem;
 
     transition: background-color 0.2s;
 }
@@ -83,7 +85,9 @@ img {
 .button:hover {
     background-color: var(--verdeOscuro);
 }
-
+input {
+    border: none;
+}
 /* utils */
 
 .text-center {
@@ -92,6 +96,11 @@ img {
 
 .max-width-30{
     max-width: 30rem;
+}
+
+.align-right {
+    display: flex;
+    justify-content: flex-end;
 }
 
 /** header **/
@@ -316,6 +325,67 @@ img {
     object-fit: cover;
 }
 
+
+/* formulario */
+
+.formulario {
+    width: 80%;
+    margin: 0 auto;
+    padding: 3rem 5rem;
+    border-radius: 1rem;
+    box-shadow: 0px 0px 7px 0px rgba(0,0,0,0.5);
+}
+
+.formulario fieldset {
+    all: unset;
+    display: block;
+    border-bottom: 0.1rem solid var(--grisClaro);
+    padding-bottom: 3rem;
+    margin-bottom: 3rem;
+}
+
+.formulario fieldset:last-of-type {
+    padding: 0;
+    border-bottom: none;
+}
+
+.formulario legend {
+    font-size: 2.8rem;
+    font-weight: bold;
+    margin-bottom: 0;
+    color: var(--primario);
+}
+
+.campo {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    font-size: 2rem;
+}
+
+.campo label {
+       font-weight: bold;
+       color: var(--grisOscuro);
+}
+
+.campo .input {
+    padding: 1rem; 
+    border-radius: 0.5rem;
+    border: 0.1rem solid var(--grisClaro);
+}
+
+.campo .input:focus-visible {
+    outline-color: var(--primario);
+}
+
+.submit {
+    padding: 2rem;
+}
+
+
+
+
 /* media query, tablet*/
 @media (min-width: 768px) {
     .sobre-nosotros {
@@ -365,5 +435,9 @@ img {
 
     .nosotros {
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .submit {
+        width: 30rem;
     }
 }

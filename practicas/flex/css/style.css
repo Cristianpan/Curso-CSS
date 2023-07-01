@@ -207,8 +207,6 @@ h2 {
 }
 
 /* flex grow */
-
-
 .d-flex-11 {
     display: flex;
 }
@@ -217,3 +215,33 @@ h2 {
     flex-grow: 1;
 }
 
+/* flex shrink 
+    su valor inicial es de 1 e indica 
+    la proporcion en la que se hace más pequeño un elemento
+*/
+.d-flex-12 {
+    display: flex;
+}
+
+.d-flex-12 .box {
+    flex-grow: 1;
+    flex-basis: 30rem;    
+}
+
+.d-flex-12 .box:nth-child(2) {
+    flex-shrink: 5;
+}
+
+/*
+ shortand 
+
+ flex: grow shrink basis
+*/
+
+.d-flex-13 {
+    display: flex;
+}
+
+.d-flex-13 .box {
+    flex: 1 0 33%;
+}

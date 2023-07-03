@@ -91,7 +91,7 @@ h1, h2 {
 
 /* selector de clases anidadas */
 
-.codigo .header .descripcion {
+/* .codigo .header .descripcion {
     font-size: 2rem;
     color: gray;
 }
@@ -99,7 +99,7 @@ h1, h2 {
 .codigo .descripcion{
     color: red;
 }
-
+ */
 
 /* selector de id */
 .selector-id .texto {
@@ -157,3 +157,46 @@ h1, h2 {
     border-color: red;
 }
 
+
+/*selector del primer hijo*/
+
+.primer-hijo ul li:first-child{
+    border: 0.2rem solid red;
+}
+
+
+/*selector del ultimo hijo*/
+
+.ultimo-hijo ul li:last-child {
+    border: 0.2rem solid red;
+}
+
+
+/*selector de elemento especifico */
+
+/* .elemento-especifico ul li:nth-child(3){
+    color: red;
+    border: 0.2rem solid red;
+}
+ */
+
+.elemento-especifico ul li:nth-child(2n+1){
+    color: red;
+    border: 0.2rem solid red;
+}
+
+/*seleccionar todos los elementos excepto uno/s*/
+.excepto p:not(.heading, .oferta) {
+    color: red;
+}
+
+/* seleccionar primera letra */
+
+.primer-letra::first-letter {
+    font-size: 3rem;
+}
+
+/*primer linea*/
+.primer-linea::first-line {
+    color: red;
+}

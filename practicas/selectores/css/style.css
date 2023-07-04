@@ -1,0 +1,202 @@
+:root {
+    --azul: #0071b7;
+    --blanco: #FFF;
+    --naranja: #ff4f1e;
+}
+html {
+    font-size: 62.5%; /** 1REM = 10pX **/
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+  
+body {
+    background-color: var(--azul);
+    font-family:  'Lato', sans-serif;
+    font-size: 1.6rem;
+}
+
+h1, h2 {
+    color: var(--blanco);
+    text-align: center;
+    margin: 5rem 0;
+    padding: 1rem;
+}
+.caja-curso {
+    background-color: var(--naranja);
+    text-align: center;
+    color: var(--blanco);
+    padding: 5rem;
+
+}
+.caja-curso h1 {
+    margin: 0;
+}
+.caja-curso p {
+    font-size: 2.4rem;
+}
+.caja-curso a {
+    font-size: 2.4rem;
+    padding: 2rem;
+    display: inline-block;
+    text-decoration: none;
+    color: var(--blanco);
+    padding: 0;
+}
+.contenedor {
+    max-width: 120rem;
+    margin: 0 auto;
+}
+.box {
+    background-color: var(--naranja);
+    color: var(--blanco);
+    padding: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4rem;
+    border: 1rem solid #bb2b03;
+}
+
+.codigo {
+    background-color: var(--blanco);
+    padding: 5rem;
+}
+
+
+
+/* selector de etiqueta */
+
+/* p {
+    font-size: 2rem;
+    color: red;
+} */
+
+ /* selector de clase */
+
+.primer-parrafo {
+    font-size: 4rem;
+    color: red;
+    text-align: center;
+}
+
+/* selector de dos clases */
+.texto.azul {
+    color: blue;
+}
+.texto.mayusculas {
+    text-transform: uppercase;
+}
+
+/* selector de clases anidadas */
+
+/* .codigo .header .descripcion {
+    font-size: 2rem;
+    color: gray;
+}
+
+.codigo .descripcion{
+    color: red;
+}
+ */
+
+/* selector de id */
+.selector-id .texto {
+    color: red;
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+#encabezado {
+    color: blue;
+}
+
+#parrafo-2.texto {
+    color: green;
+}
+
+/* selector de etiqueta y clase */
+
+.clase div.texto {
+    background-color: yellow;
+}
+
+/* seleccionar 2 elementos*/
+
+.elementos-2 .texto , .elementos-2 .oferta {
+    color: red;
+}
+
+/* primer nivel de hijos */
+
+.nivel-hijos > div{
+    border: 1px solid red;
+}
+
+
+/* primer elemento después */
+
+.nivel-hijos-2 .admin div + p {
+    background-color: red;
+}
+
+/* selector de atributo
+
+    ^ - inicie con
+    $ - finalice con 
+
+*/
+
+.atributo a[href ^= "http"] {
+    color: red;
+}
+
+.atributo input[type="tel"] {
+    color: gray;
+    border-color: red;
+}
+
+
+/*selector del primer hijo*/
+
+.primer-hijo ul li:first-child{
+    border: 0.2rem solid red;
+}
+
+
+/*selector del ultimo hijo*/
+
+.ultimo-hijo ul li:last-child {
+    border: 0.2rem solid red;
+}
+
+
+/*selector de elemento especifico */
+
+/* .elemento-especifico ul li:nth-child(3){
+    color: red;
+    border: 0.2rem solid red;
+}
+ */
+
+.elemento-especifico ul li:nth-child(2n+1){
+    color: red;
+    border: 0.2rem solid red;
+}
+
+/*seleccionar todos los elementos excepto uno/s*/
+.excepto p:not(.heading, .oferta) {
+    color: red;
+}
+
+/* seleccionar primera letra */
+
+.primer-letra::first-letter {
+    font-size: 3rem;
+}
+
+/*primer linea*/
+.primer-linea::first-line {
+    color: red;
+}

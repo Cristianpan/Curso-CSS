@@ -1,0 +1,58 @@
+@use '../base/mixins' as m;
+@use '../base/variables' as v;
+
+.nuestro-menu {
+    background-image: url(../img/menu_arriba.svg), url(../img/menu_abajo.svg), linear-gradient(to top, v.$primario, v.$primario);
+    background-repeat: no-repeat;
+    background-position: center 5rem, center 98%, 100%;
+    background-size: 200%;
+    color: v.$blanco;
+    padding: 15rem 0 20rem 0;
+
+    @include m.tablet {
+        background-size: 50%, 50%, 100%;
+    }
+}
+
+.grid-menu {
+    @include m.tablet {
+        @include m.grid(2, 2rem)
+        
+    }
+}
+
+.menu {
+    h3 {
+        color: v.$blanco;
+    }
+
+    li {
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+
+        p{
+            color: v.$blanco;
+            font-size: 2.2rem;
+            line-height: 1.5;
+            margin: 0 0 3rem 0;
+        }
+
+        .descripcion {
+            flex: 4;
+            span {
+                color: v.$secundario;
+                display: block;
+            }
+        }
+
+        .precio {          
+            flex: 1;  
+            font-size: 4rem;
+            font-weight: bold;
+            
+        }
+    }
+
+
+}

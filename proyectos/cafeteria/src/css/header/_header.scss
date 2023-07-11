@@ -43,5 +43,24 @@
 }
 
 .header-inicio {
-    background-image: url(../img/header_inicio.jpg);
+    background-image: image-set(url(../img/header_inicio.avif) 1x, url(../img/header_inicio.webp) 1x, url(../img/header_inicio.jpg) 1x);
 }
+
+.header-nosotros{
+    background-image: image-set(url(../img/header_nosotros.avif) 1x, url(../img/header_nosotros.webp) 1x, url(../img/header_nosotros.jpg) 1x);
+}
+
+.header-proceso{
+    background-image: image-set(url(../img/header_proceso.avif) 1x, url(../img/header_proceso.webp) 1x, url(../img/header_proceso.jpg) 1x);
+}
+
+.header-menu{
+    background-image: image-set(url(../img/header_menu.avif) 1x, url(../img/header_menu.webp) 1x, url(../img/header_menu.jpg) 1x);
+}
+.header-galeria{
+    background-image: image-set(url(../img/header_galeria.avif) 1x, url(../img/header_galeria.webp) 1x, url(../img/header_galeria.jpg) 1x);
+}
+.header-contacto{
+    background-image: image-set(url(../img/header_contacto.avif) 1x, url(../img/header_contacto.webp) 1x, url(../img/header_contacto.jpg) 1x);
+}
+

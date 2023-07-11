@@ -6,11 +6,18 @@
     background-repeat: no-repeat;
     background-position: center 5rem, center 98%, 100%;
     background-size: 200%;
-    color: v.$blanco;
     padding: 15rem 0 20rem 0;
+
+    h2 {
+        color: v.$blanco;
+        &::after {
+            display: none;
+        }
+    }
 
     @include m.tablet {
         background-size: 50%, 50%, 100%;
+        background-position: center 5rem, center 92%, 100%;
     }
 }
 

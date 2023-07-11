@@ -11,7 +11,7 @@ html {
 body{
     font-family: v.$fuentePrincipal;
     font-size: 1.6rem;
-    background-color: v.$cafeClaro;
+    background-color: v.$cafeClaro; 
 }
 
 img {
@@ -27,6 +27,7 @@ img {
 
 a {
     text-decoration: none;
+    color: v.$negro;
 }
 
 ul {

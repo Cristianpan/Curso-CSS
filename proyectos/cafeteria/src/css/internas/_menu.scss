@@ -1,0 +1,20 @@
+@use '../base/mixins' as m;
+@use '../base/variables' as v;
+
+.contenido-menu {
+    
+    @include m.tablet {
+        @include m.grid(2, 5rem);
+        align-items: flex-end;
+    }
+
+
+    .texto {
+        font-size: 2rem;
+
+        @include m.tablet {
+            padding-bottom: 3rem;
+            margin-bottom: 10rem;
+        }
+    }
+}

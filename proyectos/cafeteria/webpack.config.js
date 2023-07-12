@@ -25,6 +25,7 @@ module.exports = {
             loader: "css-loader",
             options: {
               sourceMap: true,
+              url: false
             },
           },
           {
@@ -49,7 +50,7 @@ module.exports = {
     new MiniCssExtractPlugin({
       filename: "css/app.bundle.css",
     }),
-   /* new CopyPlugin({
+   /*  new CopyPlugin({
       patterns: [
         {
           from: "src/img",

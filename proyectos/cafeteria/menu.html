@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cafetería</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bona+Nova&family=Raleway:wght@400;700&family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preload" href="build/css/app.bundle.css" as="style" />
+    <link rel="stylesheet" href="build/css/app.bundle.css" />
+  </head>
+  <body>
+    <header class="header header-menu">
+      <div class="contenido-header contenedor">
+        <div class="barra">
+          <div class="logo">
+            <img src="build/img/logo.svg" alt="logo categoria" />
+          </div>
+
+          <nav class="nav-principal">
+            <a href="index.html">Inicio</a>
+            <a href="nosotros.html">Nosotros</a>
+            <a href="proceso.html">Proceso</a>
+            <a class="activo" href="menu.html">Menú</a>
+            <a href="galeria.html">Galería</a>
+            <a href="contacto.html">Contacto</a>
+          </nav>
+        </div>
+        <div class="texto-header">
+          <h1>Disfruta una deliciosa taza de café</h1>
+        </div>
+      </div>
+    </header>
+
+    <main class="contenedor contenido-principal padding-bottom-0">
+      <h2><span>Utilizamos los</span>mejores ingredientes</h2>
+      <div class="contenido-menu">
+        <div class="texto">
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat
+            quia vero nemo. Autem, consequuntur. Quaerat consequuntur ipsum
+            dolorum quas? Tenetur soluta a nihil eum, iusto temporibus nulla cum
+            ut sapiente. Lorem ipsum dolor sit amet consectetur adipisicing
+            elit. Nam voluptate, molestiae assumenda fugiat error unde natus! Ab
+            facere, aspernatur, alias deleniti modi nemo mollitia recusandae
+            inventore suscipit, quas ipsa illo?
+          </p>
+        </div>
+
+        <div class="imagen">
+          <picture>
+            <source srcset="build/img/cafe.avif" type="image/avif" />
+            <source srcset="build/img/cafe.webp" type="image/webp" />
+            <img loading="lazy" src="build/img/cafe.jpg" alt="imagen cafe" />
+          </picture>
+        </div>
+      </div>
+    </main>
+
+    <section class="nuestro-menu">
+      <h2><span>Nuestro delicioso</span>Menú</h2>
+
+      <div class="contenedor grid-menu">
+        <section class="menu cafe">
+          <h3>Café</h3>
+          <ul>
+            <li>
+              <p class="descripcion">
+                Café Latte
+                <span>Café Espresso con leche caliente evaporada</span>
+              </p>
+              <p class="precio">$25</p>
+            </li>
+            <li>
+              <p class="descripcion">
+                Café Mocha <span>Espresso con crema batida</span>
+              </p>
+              <p class="precio">$30</p>
+            </li>
+            <li>
+              <p class="descripcion">Café Americano <span>Café Negro</span></p>
+              <p class="precio">$30</p>
+            </li>
+            <li>
+              <p class="descripcion">
+                Capuccino<span>Espresso con una capa suave de espuma</span>
+              </p>
+              <p class="precio">$25</p>
+            </li>
+            <li>
+              <p class="descripcion">
+                Café Mocha Frio<span>Espresso, dulce con mocha y leche.</span>
+              </p>
+              <p class="precio">$29</p>
+            </li>
+            <li>
+              <p class="descripcion">
+                Mocha Frio Quemado<span
+                  >Espresso, hielo, con azucar quemada y mantequilla.</span
+                >
+              </p>
+              <p class="precio">$35</p>
+            </li>
+            <li>
+              <p class="descripcion">
+                Latte con Caramelo<span>Espresso, leche y caramelo.</span>
+              </p>
+              <p class="precio">$39</p>
+            </li>
+          </ul>
+        </section>
+        <!-- .menu.cafe -->
+        <section class="menu comida">
+          <h3>Comida</h3>
+          <ul>
+            <li>
+              <p class="descripcion">
+                Baguette de Pollo
+                <span>Delicioso Baguette con pollo a la plancha</span>
+              </p>
+              <p class="precio">$45</p>
+            </li>
+            <li>
+              <p class="descripcion">
+                Baguette Pollo y Queso
+                <span>Baguette combinado con Pollo y Queso Manchego</span>
+              </p>
+              <p class="precio">$50</p>
+            </li>
+            <li>
+              <p class="descripcion">
+                Baguette con Tocino<span
+                  >Baguette con especias y verduras, además de tocino</span
+                >
+              </p>
+              <p class="precio">$50</p>
+            </li>
+            <li>
+              <p class="descripcion">
+                Baguette de Jamón<span
+                  >Delicioso Baguette con Jamón y Especias</span
+                >
+              </p>
+              <p class="precio">$65</p>
+            </li>
+            <li>
+              <p class="descripcion">
+                Baguette con Jamón, Queso y Tocino<span
+                  >El especial de la casa</span
+                >
+              </p>
+              <p class="precio">$69</p>
+            </li>
+            <li>
+              <p class="descripcion">
+                Sandwich de Pollo<span
+                  >Delicioso sandwich con Pollo y especies</span
+                >
+              </p>
+              <p class="precio">$65</p>
+            </li>
+            <li>
+              <p class="descripcion">
+                Sandwich de Jamón y queso<span
+                  >Queso Amarillo con Jamón y Queso</span
+                >
+              </p>
+              <p class="precio">$59</p>
+            </li>
+          </ul>
+        </section>
+        <!-- .menu.comida -->
+      </div>
+    </section>
+
+    <footer class="footer menu">
+      <div class="contenedor contenido-footer">
+        <div class="footer-box ubicacion">
+          <h3>Ubicación</h3>
+          <p>Avenida Yucatán, 90802</p>
+          <p>Guadalajara, Jalisco</p>
+        </div>
+
+        <div class="footer-box reservacion">
+          <h3>Reservación</h3>
+          <p>Tel. 3850-9102</p>
+          <a href="tel:+38509102">Llamar</a>
+        </div>
+
+        <div class="footer-box horario">
+          <h3>Horario</h3>
+          <p>Lun-Jue: 11:00 - 22:00</p>
+          <p>Vie-Sab: 09:00 - 24:00</p>
+          <p>Domingo: Cerrado</p>
+        </div>
+      </div>
+
+      <p class="copyright">Todos los derechos reservados. La Cafetería</p>
+    </footer>
+  </body>
+</html>

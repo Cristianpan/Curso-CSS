@@ -1,10 +1,16 @@
-@use '../base/variables' as v; 
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
 
 .header {
     padding: 5rem 0;
-    background-repeat: no-repeat;
-    background-size: cover;
     position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    @include m.tablet {
+        min-height: 70rem;
+    }
 
     &::before {
         content: '';
@@ -14,14 +20,47 @@
         left: 0;
         right: 0;
         bottom: 0;
-        opacity: .6;
+        opacity: 0.6;
     }
 
-    .contenido-hedar {
+    .contenido-header {
         position: relative;
+
+        h1 {
+            color: v.$blanco;
+            text-transform: uppercase;
+            margin-top: 5rem;
+            font-size: 3.2rem;
+
+            @include m.tablet {
+                margin-top: 10%;
+
+            }
+
+        }
+
     }
 }
 
 .header-inicio {
-    background-image: url(../img/header_inicio.jpg);
+    background-image: image-set(url(../img/header_inicio.avif) 1x, url(../img/header_inicio.webp) 1x, url(../img/header_inicio.jpg) 1x);
 }
+
+.header-nosotros{
+    background-image: image-set(url(../img/header_nosotros.avif) 1x, url(../img/header_nosotros.webp) 1x, url(../img/header_nosotros.jpg) 1x);
+}
+
+.header-proceso{
+    background-image: image-set(url(../img/header_proceso.avif) 1x, url(../img/header_proceso.webp) 1x, url(../img/header_proceso.jpg) 1x);
+}
+
+.header-menu{
+    background-image: image-set(url(../img/header_menu.avif) 1x, url(../img/header_menu.webp) 1x, url(../img/header_menu.jpg) 1x);
+}
+.header-galeria{
+    background-image: image-set(url(../img/header_galeria.avif) 1x, url(../img/header_galeria.webp) 1x, url(../img/header_galeria.jpg) 1x);
+}
+.header-contacto{
+    background-image: image-set(url(../img/header_contacto.avif) 1x, url(../img/header_contacto.webp) 1x, url(../img/header_contacto.jpg) 1x);
+}
+

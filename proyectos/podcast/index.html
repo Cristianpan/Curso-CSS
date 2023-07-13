@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Podcast App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preload" href="build/css/app.bundle.css" as="style" />
+    <link rel="stylesheet" href="build/css/app.bundle.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="contenedor header__grid">
+        <div class="header__logo">
+          <img src="build/img/logo.svg" alt="logo podcast app" />
+        </div>
+
+        <div class="header__contenido">
+          <h1 class="header__titulo">Tu plataforma para publicar tu podcast</h1>
+          <a href="#" class="boton-primario">Crear Cuenta</a>
+        </div>
+      </div>
+    </header>
+
+    <section class="contenedor seccion crea">
+      <div class="crea__grid">
+        <div class="crea__imagen">
+          <img src="build/img/imagen_podcast.svg" alt="imagen podcast" />
+        </div>
+        <div class="crea__contenido">
+          <h2 class="crea__heading">Crea tu Podcast</h2>
+          <p class="crea__texto">
+            Nosotros lo distribuimos a las plataformas más populares como Google
+            Podcast, Spotify, Apple Podcast y YouTube.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="beneficios seccion">
+      <div class="beneficios__grid contenedor">
+        <div class="beneficios__contenido">
+          <h2 class="beneficios__heading">LLega a miles y gana dinero</h2>
+          <p class="beneficios__texto">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni
+            consequatur provident nobis praesentium rerum deleniti voluptates!
+            Perspiciatis impedit inventore quas voluptate recusandae! Magni
+            cumque ab aliquid ipsa officia, ipsum placeat.
+          </p>
+        </div>
+
+        <div class="beneficios__imagen">
+          <picture>
+            <source srcset="build/img/podcast_cover.avif" type="image/avif" />
+            <source srcset="build/img/podcast_cover.webp" type="image/webp" />
+            <img
+              loading="lazy"
+              src="build/img/podcast_cover.png"
+              alt="imagen podcast"
+            />
+          </picture>
+        </div>
+      </div>
+    </section>
+
+    <section class="estadisticas seccion contenedor">
+      <h2 class="estadisticas__heading">Estadísticas Detalladas</h2>
+      <p class="estadisticas__texto">
+        Nosotros lo distribuimos a las plataformas más populares como Google
+        Podcast, Spotify, Apple Podcast y Youtube
+      </p>
+
+      <img src="build/img/grafica.svg" alt="estadistico imagen" />
+    </section>
+  </body>
+
+  <section class="planes seccion">
+    <div class="contenedor">
+      <h2 class="planes__heading">Planes</h2>
+      <p class="planes__texto">
+        Inicia gratis, crece tu plan cuando sea necesario
+      </p>
+
+      <div class="planes__grid">
+        <div class="plan">
+          <div class="plan__imagen">
+            <img src="build/img/icono_inicio.svg" alt="icono plan inicio" />
+          </div>
+
+          <div class="plan__contenido">
+            <h3 class="plan__tipo">Inicio</h3>
+            <p class="plan__precio">$2.99 Mes</p>
+            <ul class="plan__listado">
+              <li class="plan__info">30 Episodios</li>
+              <li class="plan__info">Estadísticas</li>
+              <li class="plan__info">App para grabar</li>
+            </ul>
+
+            <a href="#" class="plan__boton">Inscribirme</a>
+          </div>
+        </div>
+        <!-- .plan -->
+        <div class="plan plan--negocio">
+          <div class="plan__imagen">
+            <img src="build/img/icono_negocio.svg" alt="icono plan negocio" />
+          </div>
+
+          <div class="plan__contenido">
+            <h3 class="plan__tipo">Negocio</h3>
+            <p class="plan__precio">$6.99 Mes</p>
+            <ul class="plan__listado">
+              <li class="plan__info">Episodios ilimitados</li>
+              <li class="plan__info">Todas las plataformas</li>
+              <li class="plan__info">Estadísticas</li>
+              <li class="plan__info">App para grabar</li>
+              <li class="plan__info">Podcast Pagados</li>
+            </ul>
+
+            <a href="#" class="plan__boton plan__boton--negocio">Inscribirme</a>
+          </div>
+        </div>
+        <!-- .plan -->
+        <div class="plan">
+          <div class="plan__imagen">
+            <img src="build/img/icono_pro.svg" alt="icono plan pro" />
+          </div>
+
+          <div class="plan__contenido">
+            <h3 class="plan__tipo">Pro</h3>
+            <p class="plan__precio">$4.99 Mes</p>
+            <ul class="plan__listado">
+              <li class="plan__info">50 Episodios</li>
+              <li class="plan__info">Todas las plataformas</li>
+              <li class="plan__info">Estadísticas</li>
+              <li class="plan__info">App para grabar</li>
+            </ul>
+
+            <a href="#" class="plan__boton">Inscribirme</a>
+          </div>
+        </div>
+        <!-- .plan -->
+      </div>
+    </div>
+  </section>
+
+  <section class="contenedor seccion testimoniales">
+    <div class="testimoniales__imagen">
+      <picture>
+        <source srcset="build/img/app.avif" type="image/avif" />
+        <source srcset="build/img/app.webp" type="image/webp" />
+        <img loading="lazy" src="build/img/app.jpg" alt="imagen app" />
+      </picture>
+    </div>
+
+    <div class="testimoniales__contenido">
+      <h2 class="testimoniales__heading">Testimoniales</h2>
+      <div class="testimonial">
+        <p class="testimonial__texto">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil quod
+          provident pariatur deserunt
+        </p>
+      </div>
+      <div class="testimonial">
+        <p class="testimonial__texto">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil quod
+          provident pariatur deserunt
+        </p>
+      </div>
+      <div class="testimonial">
+        <p class="testimonial__texto">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil quod
+          provident pariatur deserunt
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer__grid contenedor">
+      <div class="footer__imagen">
+        <img src="build/img/logo.svg" alt="logo podcast app">
+      </div>
+
+      <div class="footer__contenido">
+        <h3 class="footer__titulo">Soluciones</h3>
+        <nav class="footer__nav">
+          <a href="#" class="footer__enlace">Soluciones</a>
+          <a href="#" class="footer__enlace">Graficas</a>
+          <a href="#" class="footer__enlace">Distribucion</a>
+        </nav>
+      </div>
+      <div class="footer__contenido">
+        <h3 class="footer__titulo">Soporte</h3>
+        <nav class="footer__nav">
+          <a href="#" class="footer__enlace">Documentación</a>
+          <a href="#" class="footer__enlace">Precios</a>
+          <a href="#" class="footer__enlace">API</a>
+        </nav>
+      </div>
+      <div class="footer__contenido">
+        <h3 class="footer__titulo">Podcast FM</h3>
+        <nav class="footer__nav">
+          <a href="#" class="footer__enlace">Nosotros</a>
+          <a href="#" class="footer__enlace">Blog</a>
+          <a href="#" class="footer__enlace">Clientes</a>
+        </nav>
+      </div>
+      
+    </div>
+
+    <p class="footer__copyright">Podcast FM - Todos los derechos reservados</p>
+
+  </footer>
+</html>

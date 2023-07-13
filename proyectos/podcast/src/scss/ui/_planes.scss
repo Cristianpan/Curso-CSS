@@ -1,0 +1,94 @@
+@use '../base/mixins' as m;
+@use '../base/variables' as v;
+
+.planes {
+
+    background-color: v.$secundario;
+
+    &__grid {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 2rem;
+        align-items: center;
+
+        @include m.tablet {
+            flex-direction: row;
+            gap: 0;
+        }
+    }
+
+    &__heading,
+    &__texto {
+        color: v.$blanco;
+    }
+}
+
+.plan {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3rem;
+    background-color: v.$blanco;
+    height: 50rem;
+    width: 100%;
+
+    @include m.tablet {
+        width: 30rem;
+
+    }
+
+    transition: transform 0.3s;
+
+    &:hover {
+        transform: scale(1.025);
+    }
+
+    &--negocio {
+        background-color: v.$primario;
+        order: -1;
+
+
+        @include m.tablet {
+            height: 60rem;
+            order: unset;
+            border-radius: 1rem;
+        }
+    }
+
+    &__imagen {
+        width: 10rem;
+        margin: 0 auto;
+    }
+
+    &__contenido {
+        text-align: center;
+    }
+
+    &__tipo {
+        margin: 0;
+    }
+
+    &__precio {
+        font-weight: bold;
+        font-size: 2.4rem;
+        margin: 1rem 0;
+    }
+
+    &__listado {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    &__boton {
+        @include m.boton(v.$primario, v.$secundario);
+        border-radius: 1rem;
+        width: 20rem;
+        margin: 3rem auto;
+
+        &--negocio {
+            border: 0.2rem solid v.$blanco;
+        }
+    }
+}

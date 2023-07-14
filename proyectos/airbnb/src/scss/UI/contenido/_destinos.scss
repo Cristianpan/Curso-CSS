@@ -1,0 +1,49 @@
+@use '../../base/mixins' as m;
+@use '../../base/variables' as v;
+
+.destinos {
+    &__grid {
+        display: grid;
+        gap: 2rem;
+        grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    }
+
+    &__heading {
+        color: v.$grisOscuro;
+    }
+}
+
+.destino { 
+    padding: 1rem 0;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+
+    &__imagen {
+        width: 14rem;
+    }
+
+    &__distancia {
+        margin: 0;
+        color: v.$grisOscuro;
+        width: 80%;
+    }
+
+    &__nombre {
+        color: v.$grisOscuro;
+        position: relative;
+        margin-bottom: 1rem;
+        display: inline-block;
+        &::after {
+            content: '';
+            display: block;
+            max-width: 12rem;
+            width: 100%;
+            height: 0.2rem;
+            background-color: v.$primario;
+            position: absolute;
+            bottom: 0.4rem;
+        }
+    }
+}

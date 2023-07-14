@@ -1,0 +1,53 @@
+@use '../../base/mixins' as m;
+@use '../../base/variables' as v; 
+
+
+.anfitrion {
+    margin-top: 3rem;
+    color: v.$blanco; 
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    align-items: center;
+    background-image: linear-gradient(to bottom, v.$negro 0%, v.$negro 50%, transparent 100%);
+    
+    @include m.tablet {
+        margin: 3rem auto 0 auto;
+        max-width: 120rem;
+        border-radius: 1.5rem;
+        grid-template-rows: unset;
+        grid-template-columns: repeat(2, 1fr);
+        background-image: linear-gradient(to right, v.$negro 0%, v.$negro 45%, transparent 55%);   
+    }
+
+    &__heading {
+        color: v.$blanco;
+    }
+
+    &__contenido {
+        padding: 5rem;
+    }
+
+    &__imagen {
+        @include m.tablet {
+            margin-left: -20rem;
+            
+            img {
+                filter: brightness(1.2);
+                mix-blend-mode: multiply;
+            }
+        }
+    }
+
+
+    &__texto {
+        color: v.$blanco;
+    }
+
+    &__enlace {
+        @include m.boton(v.$blanco, v.$negro);
+        text-align: center;
+        border-radius: 1rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+}

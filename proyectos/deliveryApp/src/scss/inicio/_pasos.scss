@@ -1,0 +1,46 @@
+@use '../base/mixins' as m;
+@use '../base/variables' as v;
+
+.pasos {
+    background-color: v.$primario;
+    position: relative;
+    margin-top: 35rem;
+
+    &::before {
+        content: '';
+        display: block;
+        background-image: url(../img/wave.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 20rem;
+        top: -20rem;
+        z-index: 0;
+        position: absolute; 
+
+    }
+
+    &__heading {
+        text-align: center;
+        color: v.$blanco;
+
+        &--descripcion {
+            display: block;
+            font-size: 1.8rem
+        }
+    }
+
+    &__grid {
+        @include m.tablet {
+            @include m.grid(3, 2fr);
+        }
+    }
+
+    &__imagen {
+        transition: transform 300ms ease-in-out;
+
+        &:hover {
+            transform: rotate(-4deg) scale(1.1);
+        }
+    }
+}

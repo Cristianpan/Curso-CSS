@@ -1,0 +1,25 @@
+@use '../base/mixins' as m;
+@use '../base/variables' as v; 
+
+.navegacion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+    width: 100%;
+
+    @include m.tablet {
+        width: auto;
+        flex-direction: row;        
+    }
+
+    &__enlace {
+        font-size: 2rem;
+        font-weight: bold;
+        color: v.$negro;
+
+        &--registrar {
+            @include m.boton(v.$primario, v.$blanco);
+        }
+    }
+}

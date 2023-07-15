@@ -1,0 +1,80 @@
+@use '../../base/mixins' as m;
+@use '../../base/variables' as v;
+
+
+.footer {
+    background-color: v.$primario;
+    padding-top: 5rem;
+    margin-top: 5rem;
+
+    &__grid {
+        @include m.tablet {
+            @include m.grid(3, 2rem);
+        }
+    }
+
+    &__heading {
+        color: v.$blanco;
+        font-size: 2rem;
+        text-transform: uppercase;
+        text-align: center;
+        margin: 0 0 2rem 0;
+
+        @include m.tablet {
+            text-align: left;
+
+        }
+    }
+
+    &__box {
+        margin: 0 auto;
+    }
+
+    &__box:last-of-type {
+        align-self: center;
+    }
+
+    &__logo {
+        width: 30rem;
+        margin: 0 auto;
+    }
+
+    &__texto {
+        color: v.$blanco;
+        text-align: center;
+        margin: 0 auto 3rem auto;
+
+        @include m.tablet {
+            text-align: left;
+
+        }
+    }
+
+    &__navegacion {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 2rem;
+        margin-bottom: 3rem;
+
+        @include m.tablet {
+            flex-direction: column;
+            margin-bottom: 0;
+
+        }
+    }
+
+    &__enlace {
+        color: v.$blanco;
+        font-size: 1.8rem;
+    }
+
+    &__copyright {
+        background-color: darken(v.$primario, 10%);
+        padding: 1rem;
+        text-align: center;
+        margin: 3rem 0 0 0;
+        color: v.$blanco;
+    }
+}

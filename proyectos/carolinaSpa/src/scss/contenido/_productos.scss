@@ -21,6 +21,9 @@
 }
 
 .producto {
+    max-width: 50rem;
+    margin: 0 auto;
+
     &__contenido {
         background-color: v.$blanco;
         padding: 2rem;

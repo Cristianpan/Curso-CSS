@@ -1,0 +1,21 @@
+@use '../base/mixins' as m;
+@use '../base/variables' as v;
+
+.slider {
+    overflow: hidden;
+    position: relative;
+    &__slide {
+        height: 100%;
+        width: 100%;
+        flex-shrink: 0;
+        position: relative;
+    }
+
+    &__imagen {
+        width: 100%;
+    }
+
+    .swiper-pagination-bullet {
+        background-color: v.$blanco;
+    }
+}

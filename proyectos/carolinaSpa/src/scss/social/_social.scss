@@ -11,9 +11,12 @@
         margin: 0;
     }
     
+
     &__accesible {
-        opacity: 0;
-        position: absolute;
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+        display: block;
     }
 
 

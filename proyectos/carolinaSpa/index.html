@@ -11,6 +11,10 @@
       href="https://fonts.googleapis.com/css2?family=Italianno&family=Lato:wght@400;700;900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
     <link rel="preload" href="build/css/app.bundle.css" as="style" />
     <link rel="stylesheet" href="build/css/app.bundle.css" />
   </head>
@@ -53,15 +57,40 @@
       </div>
     </div>
 
-    <section class="slider">
+    <section class="slider contenedor">
       <ul class="slider__contenedor">
         <li class="slider__slide">
           <picture>
             <source srcset="build/img/slide_01.avif" type="image/avif" />
             <source srcset="build/img/slide_01.webp" type="image/webp" />
             <img
+              class="slider__imagen"
               loading="lazy"
               src="build/img/slide_01.jpg"
+              alt="imagen slide"
+            />
+          </picture>
+        </li>
+        <li class="slider__slide">
+          <picture>
+            <source srcset="build/img/slide_02.avif" type="image/avif" />
+            <source srcset="build/img/slide_02.webp" type="image/webp" />
+            <img
+              class="slider__imagen"
+              loading="lazy"
+              src="build/img/slide_02.jpg"
+              alt="imagen slide"
+            />
+          </picture>
+        </li>
+        <li class="slider__slide">
+          <picture>
+            <source srcset="build/img/slide_03.avif" type="image/avif" />
+            <source srcset="build/img/slide_03.webp" type="image/webp" />
+            <img
+              class="slider__imagen"
+              loading="lazy"
+              src="build/img/slide_03.jpg"
               alt="imagen slide"
             />
           </picture>
@@ -184,7 +213,7 @@
               <tr class="tabla__tr">
                 <td class="tabla__td">Sábado</td>
                 <td class="tabla__td">09:00</td>
-                <td class="tabla__td">19:00</td>
+                <td class="tabla__td">14:00</td>
               </tr>
               <tr class="tabla__tr">
                 <td class="tabla__td">Domingo</td>
@@ -314,5 +343,66 @@
         <!-- .producto -->
       </div>
     </main>
+
+    <section class="cita">
+      <h2 class="cita__heading">Realiza una cita</h2>
+      <p class="cita__texto">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet ratione
+        consequatur est doloremque fugit aspernatur et vero ipsum, esse alias
+        quae sint adipisci totam beatae illo neque, culpa, mollitia dolorem.
+      </p>
+
+      <a href="#" class="cita__enlace">Leer Más</a>
+    </section>
+
+    <footer class="footer">
+      <div class="footer__grid">
+        <div class="footer__widget">
+          <h3 class="footer__heading">Nosotros</h3>
+          <p class="footer__texto">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque,
+            suscipit quis repellat facere aliquid ducimus, expedita repudiandae
+            obcaecati quam, quaerat deleniti! Accusantium, ratione modi
+            repellendus illum fugiat vitae! Adipisci, vero!
+          </p>
+        </div>
+
+        <div class="footer__widget">
+          <h3 class="footer__heading">Horario</h3>
+          <p class="footer__texto">Lun-Vie: 9AM - 7PM</p>
+          <p class="footer__texto">Sábado: 9AM - 2PM</p>
+          <p class="footer__te xto">Domingo: Cerrado</p>
+        </div>
+
+        <div class="footer__widget">
+          <h3 class="footer__heading">Contacto</h3>
+          <p class="footer__texto">Av. Revolución 1818</p>
+          <nav class="sociales">
+            <a class="sociales__enlace" href="https://facebook.com"
+              ><span class="sociales__accesible">Facebook</span></a
+            >
+            <a class="sociales__enlace" href="https://twitter.com"
+              ><span class="sociales__accesible">Twitter</span></a
+            >
+            <a class="sociales__enlace" href="https://instagram.com"
+              ><span class="sociales__accesible">Instagram</span></a
+            >
+            <a class="sociales__enlace" href="https://youtube.com"
+              ><span class="sociales__accesible">Youtube</span></a
+            >
+            <a class="sociales__enlace" href="https://tiktok.com"
+              ><span class="sociales__accesible">Tiktok</span></a
+            >
+          </nav>
+        </div>
+      </div>
+
+      <p class="footer__copyright">
+        Carolina Spa - Todos los derechos reservados
+      </p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="build/js/app.bundler.js"></script>
   </body>
 </html>

@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meeti</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Raleway:400,700,900|Staatliches"
+      rel="stylesheet"
+    />
+    <link rel="preload" href="build/css/app.bundle.css" as="style" />
+    <link rel="stylesheet" href="build/css/app.bundle.css" />
+  </head>
+  <body>
+    <header class="header contenedor">
+      <div class="header__logo">
+        <a href="index.html">
+          <picture>
+            <source srcset="build/img/logo.avif" type="image/avif" />
+            <source srcset="build/img/logo.webp" type="image/webp" />
+            <img loading="lazy" src="build/img/logo.png" alt="loogo meeti" />
+          </picture>
+        </a>
+      </div>
+
+      <nav class="navegacion">
+        <a href="#" class="navegacion__enlace navegacion__enlace--crear">
+          Crear Grupo
+        </a>
+        <a href="#" class="navegacion__enlace">Iniciar Sesión</a>
+        <a href="#" class="navegacion__enlace">Registrarse</a>
+      </nav>
+    </header>
+
+    <div class="hero">
+      <h1 class="hero__texto">
+        Encuentra o Crea un grupo para compartir lo que más te gusta
+      </h1>
+      <a href="#" class="hero__enlace">Obtener una cuenta</a>
+    </div>
+
+    <section class="busqueda">
+      <h2 class="busqueda__heading">Busqueda un grupo en tu ciudad</h2>
+
+      <div class="contenedor">
+        <form class="formulario">
+          <select class="formulario__campo">
+            <option value="" selected disabled>-- Seleccionar --</option>
+            <option value="programacion">Programación</option>
+            <option value="diseño">Diseño</option>
+            <option value="moda">Moda</option>
+            <option value="ejerci-salud">Ejercicio y Salud</option>
+            <option value="fotografia">Fotografía</option>
+            <option value="diseñoInterior">Diseño Interior</option>
+            <option value="cafe">Café</option>
+            <option value="cine">Cine</option>
+            <option value="libros">Libros</option>
+            <option value="emprendimiento">Emprendimiento</option>
+          </select>
+
+          <input
+            type="text"
+            class="formulario__campo"
+            placeholder="Nombre Evento"
+          />
+          <input
+            type="text"
+            class="formulario__campo"
+            placeholder="Ciudad o País"
+          />
+          <input type="submit" value="Buscar" class="formulario__submit" />
+        </form>
+      </div>
+    </section>
+
+    <main class="eventos contenedor">
+      <h2 class="eventos__heading">Próximos eventos</h2>
+
+      <div class="eventos__grid">
+        <div class="evento">
+          <a href="meeti.html">
+            <picture>
+              <source srcset="build/img/imagen1.avif" type="image/avif" />
+              <source srcset="build/img/imagen1.webp" type="image/webp" />
+              <img
+                class="evento__imagen"
+                loading="lazy"
+                src="build/img/imagen1.jpg"
+                alt="imagen meeti"
+              />
+            </picture>
+
+            <div class="evento__contenido">
+              <p class="evento__fecha">Viernes 21 de Julio de 2023</p>
+
+              <h3 class="evento__nombre">Ideas de Negocios</h3>
+
+              <div class="evento__autor">
+                <div class="evento__autor-imagen">
+                  <picture>
+                    <source srcset="build/img/perfil1.avif" type="image/avif" />
+                    <source srcset="build/img/perfil1.webp" type="image/webp" />
+                    <img
+                      loading="lazy"
+                      src="build/img/perfil1.jpg"
+                      alt="imagen perfil"
+                    />
+                  </picture>
+                </div>
+                <div class="evento__autor-informacion">
+                  <p class="evento__organizado-texto">Organizado por:</p>
+                  <p class="evento__organizado-nombre">
+                    Juan Pablo de la Torre
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- .evento__contenido -->
+          </a>
+        </div>
+        <!-- .evento -->
+        <div class="evento">
+          <a href="meeti.html">
+            <picture>
+              <source srcset="build/img/imagen2.avif" type="image/avif" />
+              <source srcset="build/img/imagen2.webp" type="image/webp" />
+              <img
+                class="evento__imagen"
+                loading="lazy"
+                src="build/img/imagen2.jpg"
+                alt="imagen meeti"
+              />
+            </picture>
+
+            <div class="evento__contenido">
+              <p class="evento__fecha">Sábado 22 de Julio de 2023</p>
+
+              <h3 class="evento__nombre">Bitcoin y Otras Cripts</h3>
+
+              <div class="evento__autor">
+                <div class="evento__autor-imagen">
+                  <picture>
+                    <source srcset="build/img/perfil1.avif" type="image/avif" />
+                    <source srcset="build/img/perfil1.webp" type="image/webp" />
+                    <img
+                      loading="lazy"
+                      src="build/img/perfil1.jpg"
+                      alt="imagen perfil"
+                    />
+                  </picture>
+                </div>
+                <div class="evento__autor-informacion">
+                  <p class="evento__organizado-texto">Organizado por:</p>
+                  <p class="evento__organizado-nombre">
+                    Juan Pablo de la Torre
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- .evento__contenido -->
+          </a>
+        </div>
+        <!-- .evento -->
+        <div class="evento">
+          <a href="meeti.html">
+            <picture>
+              <source srcset="build/img/imagen3.avif" type="image/avif" />
+              <source srcset="build/img/imagen3.webp" type="image/webp" />
+              <img
+                class="evento__imagen"
+                loading="lazy"
+                src="build/img/imagen3.jpg"
+                alt="imagen meeti"
+              />
+            </picture>
+
+            <div class="evento__contenido">
+              <p class="evento__fecha">Domingo 24 de Julio de 2023</p>
+
+              <h3 class="evento__nombre">Pizza paso a paso</h3>
+
+              <div class="evento__autor">
+                <div class="evento__autor-imagen">
+                  <picture>
+                    <source srcset="build/img/perfil2.avif" type="image/avif" />
+                    <source srcset="build/img/perfil2.webp" type="image/webp" />
+                    <img
+                      loading="lazy"
+                      src="build/img/perfil2.jpg"
+                      alt="imagen perfil"
+                    />
+                  </picture>
+                </div>
+                <div class="evento__autor-informacion">
+                  <p class="evento__organizado-texto">Organizado por:</p>
+                  <p class="evento__organizado-nombre">Jorge Gonzales</p>
+                </div>
+              </div>
+            </div>
+            <!-- .evento__contenido -->
+          </a>
+        </div>
+        <!-- .evento -->
+      </div>
+    </main>
+
+    <section class="categorias">
+      <h2 class="categorias__heading">Categorías</h2>
+
+      <ul class="categorias__grid contenedor">
+        <li class="categoria">
+          <picture>
+            <source srcset="build/img/categoria_1.avif" type="image/avif" />
+            <source srcset="build/img/categoria_1.webp" type="image/webp" />
+            <img
+              class="categoria__imagen"
+              loading="lazy"
+              src="build/img/categoria_1.jpg"
+              alt="imagen categoria"
+            />
+          </picture>
+
+          <p class="categoria__nombre">Programacion</p>
+        </li>
+        <!-- .categoria -->
+        <li class="categoria">
+          <picture>
+            <source srcset="build/img/categoria_2.avif" type="image/avif" />
+            <source srcset="build/img/categoria_2.webp" type="image/webp" />
+            <img
+              class="categoria__imagen"
+              loading="lazy"
+              src="build/img/categoria_2.jpg"
+              alt="imagen categoria"
+            />
+          </picture>
+
+          <p class="categoria__nombre">Diseño UX y UI</p>
+        </li>
+        <!-- .categoria -->
+        <li class="categoria">
+          <picture>
+            <source srcset="build/img/categoria_3.avif" type="image/avif" />
+            <source srcset="build/img/categoria_3.webp" type="image/webp" />
+            <img
+              class="categoria__imagen"
+              loading="lazy"
+              src="build/img/categoria_3.jpg"
+              alt="imagen categoria"
+            />
+          </picture>
+
+          <p class="categoria__nombre">Negocios e Ideas</p>
+        </li>
+        <!-- .categoria -->
+        <li class="categoria">
+          <picture>
+            <source srcset="build/img/categoria_4.avif" type="image/avif" />
+            <source srcset="build/img/categoria_4.webp" type="image/webp" />
+            <img
+              class="categoria__imagen"
+              loading="lazy"
+              src="build/img/categoria_4.jpg"
+              alt="imagen categoria"
+            />
+          </picture>
+
+          <p class="categoria__nombre">Ropa y Moda</p>
+        </li>
+        <!-- .categoria -->
+        <li class="categoria">
+          <picture>
+            <source srcset="build/img/categoria_5.avif" type="image/avif" />
+            <source srcset="build/img/categoria_5.webp" type="image/webp" />
+            <img
+              class="categoria__imagen"
+              loading="lazy"
+              src="build/img/categoria_5.jpg"
+              alt="imagen categoria"
+            />
+          </picture>
+
+          <p class="categoria__nombre">Ejercicio y Bienestar</p>
+        </li>
+        <!-- .categoria -->
+        <li class="categoria">
+          <picture>
+            <source srcset="build/img/categoria_6.avif" type="image/avif" />
+            <source srcset="build/img/categoria_6.webp" type="image/webp" />
+            <img
+              class="categoria__imagen"
+              loading="lazy"
+              src="build/img/categoria_6.jpg"
+              alt="imagen categoria"
+            />
+          </picture>
+
+          <p class="categoria__nombre">Fotografía</p>
+        </li>
+        <!-- .categoria -->
+        <li class="categoria">
+          <picture>
+            <source srcset="build/img/categoria_7.avif" type="image/avif" />
+            <source srcset="build/img/categoria_7.webp" type="image/webp" />
+            <img
+              class="categoria__imagen"
+              loading="lazy"
+              src="build/img/categoria_7.jpg"
+              alt="imagen categoria"
+            />
+          </picture>
+
+          <p class="categoria__nombre">Comida</p>
+        </li>
+        <!-- .categoria -->
+        <li class="categoria">
+          <picture>
+            <source srcset="build/img/categoria_8.avif" type="image/avif" />
+            <source srcset="build/img/categoria_8.webp" type="image/webp" />
+            <img
+              class="categoria__imagen"
+              loading="lazy"
+              src="build/img/categoria_8.jpg"
+              alt="imagen categoria"
+            />
+          </picture>
+
+          <p class="categoria__nombre">Diseño e Interior</p>
+        </li>
+        <!-- .categoria -->
+        <li class="categoria">
+          <picture>
+            <source srcset="build/img/categoria_9.avif" type="image/avif" />
+            <source srcset="build/img/categoria_9.webp" type="image/webp" />
+            <img
+              class="categoria__imagen"
+              loading="lazy"
+              src="build/img/categoria_9.jpg"
+              alt="imagen categoria"
+            />
+          </picture>
+
+          <p class="categoria__nombre">Café</p>
+        </li>
+        <!-- .categoria -->
+        <li class="categoria">
+          <picture>
+            <source srcset="build/img/categoria_10.avif" type="image/avif" />
+            <source srcset="build/img/categoria_10.webp" type="image/webp" />
+            <img
+              class="categoria__imagen"
+              loading="lazy"
+              src="build/img/categoria_10.jpg"
+              alt="imagen categoria"
+            />
+          </picture>
+
+          <p class="categoria__nombre">Cine</p>
+        </li>
+        <!-- .categoria -->
+        <li class="categoria">
+          <picture>
+            <source srcset="build/img/categoria_11.avif" type="image/avif" />
+            <source srcset="build/img/categoria_11.webp" type="image/webp" />
+            <img
+              class="categoria__imagen"
+              loading="lazy"
+              src="build/img/categoria_11.jpg"
+              alt="imagen categoria"
+            />
+          </picture>
+
+          <p class="categoria__nombre">Libros</p>
+        </li>
+        <!-- .categoria -->
+        <li class="categoria">
+          <picture>
+            <source srcset="build/img/categoria_12.avif" type="image/avif" />
+            <source srcset="build/img/categoria_12.webp" type="image/webp" />
+            <img
+              class="categoria__imagen"
+              loading="lazy"
+              src="build/img/categoria_12.jpg"
+              alt="imagen categoria"
+            />
+          </picture>
+
+          <p class="categoria__nombre">Emprendimiento</p>
+        </li>
+        <!-- .categoria -->
+      </ul>
+    </section>
+
+    <section class="grupos">
+      <div class="grupos__grid contenedor">
+        <div class="grupos__bloque">
+          <h3 class="grupos__heading">Crea un Grupo</h3>
+          <p class="grupos__texto">
+            Comparte lo que te gusta o tu pasión con los demás, crea tu propip
+            grupo y eventos; hoy mismo sin costos
+          </p>
+        </div>
+        <div class="grupos__bloque">
+          <h3 class="grupos__heading">Únete a un grupo</h3>
+          <p class="grupos__texto">
+            Conoce a personas con tus mismos gustos y pasiones, únete a un grupo
+            ya existente y asiste a próximos eventos
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer contenedor">
+      <nav class="navegacion">
+        <a href="#" class="navegacion__enlace navegacion__enlace--crear">
+          Crear Grupo
+        </a>
+        <a href="#" class="navegacion__enlace">Iniciar Sesión</a>
+        <a href="#" class="navegacion__enlace">Registrarse</a>
+      </nav>
+
+      <p class="footer__copyright">Todos los derechos reservados - Meeti</p>
+    </footer>
+  </body>
+</html>

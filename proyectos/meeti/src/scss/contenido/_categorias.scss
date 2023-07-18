@@ -1,0 +1,36 @@
+@use '../base/mixins' as m;
+@use '../base/variables' as v; 
+
+
+.categorias {
+    background-color: v.$grisClaro;
+    padding: 5rem 0;
+
+    &__heading {
+        @include m.heading; 
+    }
+
+    &__grid {
+        margin-top: 5rem;
+
+        @include m.grid(1, 4rem); 
+
+        @include m.tablet {
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem;
+        }
+
+        @include m.desktop {
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+}
+
+.categoria {
+    &__nombre {
+        font-size: 2.4rem;
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: 0;
+    }
+}

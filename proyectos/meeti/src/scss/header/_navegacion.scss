@@ -1,0 +1,30 @@
+@use '../base/mixins' as m;
+@use '../base/variables' as v; 
+
+.navegacion {
+    margin: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    
+    @include m.tablet {
+        margin: 0;
+        margin-right: 10rem;
+        flex-direction: row;
+    }
+
+    &__enlace {
+        font-size: 1.4rem;
+
+        &--crear {
+            font-weight: bold;
+            color: v.$primario;
+
+            @include m.tablet {
+                border-right: 0.2rem solid v.$grisClaro;
+                padding: 1rem 1rem 1rem 0;
+            }
+        }
+    }
+}

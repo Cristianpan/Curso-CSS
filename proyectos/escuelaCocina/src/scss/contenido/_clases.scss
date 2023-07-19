@@ -1,0 +1,88 @@
+@use '../base/mixins' as m;
+@use '../base/variables' as v; 
+
+.clases {
+    background-color: v.$gris;
+    padding: 5rem 0;
+
+    &__heading {
+        @include m.heading; 
+    }
+
+    &__grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 2rem; 
+
+        @include m.tablet {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        @include m.desktop {
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+}
+
+.clase {
+    border: 0.1rem solid darken(v.$gris, 10);
+    background-color: v.$blanco;
+    width: 100%;
+
+    &__meta {
+        background-color: v.$primario;
+        padding: 1.2rem 2rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 1rem;
+        
+    }
+
+    &__imagen {
+        width: 100%;
+    }
+
+    &__fecha {
+        color: v.$blanco;
+        margin: 0;
+    }
+
+    &__precio {
+        background-color: v.$secundario;
+        font-size: 1.2rem;
+        padding: 0.5rem;
+        border-radius: 1rem;
+        font-weight: bold;
+        margin: 0;
+    }
+
+    
+    &__contenido {
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1.2rem; 
+    }
+
+    &__nombre, &__descripcion, &__texto {
+        margin: 0;
+    }
+    
+    &__nombre {
+        display: -webkit-box;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+
+    &__descripcion {
+        color: v.$primario;
+    }
+
+    &__enlace {
+        @include m.boton(v.$primario, v.$blanco); 
+        display: block;
+    }
+}

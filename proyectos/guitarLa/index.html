@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GuitarLA</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preload" href="build/css/app.bundle.css" as="style" />
+    <link rel="stylesheet" href="build/css/app.bundle.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__contenedor">
+        <div class="header__barra">
+          <a href="index.html">
+            <img
+              class="header__logo"
+              src="build/img/logo.svg"
+              alt="imagen logo"
+            />
+          </a>
+
+          <nav class="navegacion">
+            <a href="index.html" class="navegacion__enlace">Inicio</a>
+            <a href="#" class="navegacion__enlace">Nosotros</a>
+            <a href="#" class="navegacion__enlace">Blog</a>
+            <a href="#" class="navegacion__enlace">Tienda</a>
+          </nav>
+        </div>
+        <!-- .header__barra -->
+
+        <div class="modelo">
+          <h1 class="modelo__nombre">Modelo VAI</h1>
+          <p class="modelo__descripcion">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi
+            reiciendis temporibus iste doloribus hic eveniet amet nesciunt
+          </p>
+
+          <p class="modelo__precio">$399</p>
+          <a href="producto.html" class="modelo__enlace">Ver Producto</a>
+        </div>
+      </div>
+
+      <picture>
+        <source srcset="build/img/header_guitarra.avif" type="image/avif" />
+        <source srcset="build/img/header_guitarra.webp" type="image/webp" />
+        <img
+        class="header__guitarra"
+          loading="lazy"
+          src="build/img/header_guitarra.png"
+          alt="imagen guitarra"
+        />
+      </picture>
+    </header>
+  </body>
+</html>

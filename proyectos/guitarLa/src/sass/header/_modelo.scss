@@ -1,0 +1,47 @@
+@use '../base/mixins' as m;
+@use '../base/variables' as v; 
+
+.modelo {
+    color: v.$blanco;
+    text-align: center;
+
+    @include m.tablet {
+        text-align: left;
+        width: 50%;
+    }
+
+    &__nombre {
+        font-size: 6rem; 
+        margin: 3rem 0;
+        line-height: 1.2;
+
+        @include m.tablet {
+            font-size: 8rem;
+        }
+    }
+
+
+    &__precio {
+        color: v.$primario;
+        font-size: 6rem;
+        font-weight: bold;
+        line-height: 0;
+    }
+
+    &__enlace {
+        margin-top: 2rem;
+        text-decoration: none;
+        padding: 1rem 5rem;
+        border: 0.2rem solid v.$primario;
+        color: v.$blanco;
+        text-transform: uppercase;
+        font-size: 1.4rem;
+        font-weight: bold;
+        transition: background-color 0.2s;
+
+
+        &:hover {
+            background-color: v.$primario;
+        }
+    }
+}

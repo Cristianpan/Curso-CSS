@@ -6,7 +6,17 @@
     padding: 5rem 0;
 
     &__heading {
-        @include m.heading; 
+        @include m.heading;
+
+        
+        &::after {
+            content: '';
+            display: block;
+            width: 2rem;
+            height: 2rem;
+            background-image: url(../img/arrow-down.png);
+            background-size: 2rem;
+        }
     }
 }
 
@@ -27,13 +37,25 @@
         border: 0.1rem solid lighten(v.$gris, 50%);
         border-radius: 0.5rem;
 
+        &--select {
+            background-image: url(../img/arrow-down.png);
+            background-size: 2rem;
+            background-repeat: no-repeat;
+            background-position: 99% center;
+            appearance: none;
+            
+            @include m.tablet {
+                background-position: 95% center;
+            }
+        }
+
         &:focus-visible {
-            outline-color: v.$primario; 
+            outline-color: v.$primario;
         }
     }
 
     &__submit {
-        @include m.boton(v.$primario, v.$blanco); 
+        @include m.boton(v.$primario, v.$blanco);
         margin: 0;
     }
 }

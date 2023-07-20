@@ -81,6 +81,11 @@
 
     &__cantidad {
         border: 0.2rem solid v.$primario;
+        background-image: url(../img/arrow-down.png);
+        background-size: 2rem;
+        background-repeat: no-repeat;
+        background-position: 98% center;
+        appearance: none;
         width: 100%;
         padding: 1rem;
 

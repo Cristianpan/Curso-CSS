@@ -1,5 +1,5 @@
 @use '../base/mixins' as m;
-@use '../base/variables' as v; 
+@use '../base/variables' as v;
 
 .header {
     background-image: linear-gradient(to right, rgb(0 0 0 / 0.7), rgb(0 0 0 / 0.7)), url(../img/header.jpg);
@@ -13,7 +13,7 @@
         flex-direction: column;
         align-items: center;
         gap: 2rem;
-        
+
         @include m.tablet {
             justify-content: space-between;
             flex-direction: row;
@@ -26,13 +26,30 @@
 
     &__guitarra {
         display: none;
-      /*   height: 150%;
+        height: 150%;
+
         @include m.desktop {
             display: block;
-            position:absolute;
+            position: absolute;
             right: 0;
             bottom: 0;
-        } */
+            animation-name: mostrarImagen;
+            animation-duration: 1s;
+            animation-delay: 0s;
+            animation-fill-mode: forwards;
+        }
     }
 }
 
+
+@keyframes mostrarImagen {
+    0% {
+        opacity: 0;
+        transform: translateX(-5rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(4rem);
+    }
+}

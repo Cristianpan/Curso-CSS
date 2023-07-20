@@ -49,6 +49,7 @@
     border: 0.5rem solid v.$secundario;
     text-align: center;
     border-collapse: collapse;
+    margin: 0 auto;
 
     &__thead {
         background-color: v.$secundario;
@@ -56,7 +57,11 @@
 
     &__th {
         padding: 2rem;
-        font-size: 2rem;
+        font-size: 1.6rem;
+
+        @include m.tablet {
+            font-size: 2rem;
+        }
     }
 
     &__tr {
@@ -68,9 +73,11 @@
 
     &__td {
         padding: 1rem 0;
-        font-size: 2.2rem;
+        font-size: 1.8rem;
+        
         @include m.telefono {
             padding: 1rem;
+            font-size: 2.2rem;
         }
     }
 }

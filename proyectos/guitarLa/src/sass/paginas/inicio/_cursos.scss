@@ -1,0 +1,36 @@
+@use '../../base/mixins' as m;
+@use '../../base/variables' as v; 
+
+.cursos {
+    margin-top: 5rem; 
+    padding: 10rem 0;
+    background-image: linear-gradient(to right, rgb(0 0 0 / 0.65), rgb(0 0 0 /0.65)), image-set(url(../img/cursos_bg.avif) 1x, url(../img/cursos__bg.webp) 1x, url(../img/cursos_bg.jpg)); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    &__texto {
+        color: v.$blanco;
+        text-align: center;
+        font-size: 2.4rem;
+        margin: 0; 
+    }
+
+    &__grid {
+        @include m.tablet {
+            @include m.grid(2, 0rem); 
+        }
+    }
+
+    &__contenido {
+        @include m.tablet {
+            grid-column: 2 / 3;
+        }
+    }
+
+    &__enlace {
+        @include m.boton(v.$primario, v.$blanco); 
+        max-width: 25rem;
+        margin: 5rem auto 0 auto;
+    }
+}
